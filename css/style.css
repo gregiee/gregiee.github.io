@@ -1,34 +1,22 @@
-body { background: #111; }
-svg {
-  width: 100vmin;
-  height: 100vmin;
-  transform: translate(calc(50vw - 50vmin), calc(50vh - 50vmin));
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-path {
-  fill: none;
-  stroke: whitesmoke;
-  stroke-width: 20;
-  transform-origin: center center;
-  animation: load 1s ease-in-out infinite;
+.rate {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  ouline: thin solid lightgray;
+}
+.emoji {
+  font-size: 120px;
+  height: 170px;
+  line-height: 170px;
 }
 
-.slash { animation-name: slash; }
-.lt { animation-name: lt; }
-.gt { animation-name: gt; animation-delay: -.5s; }
-
-
-@keyframes slash {
-  0%, 30% { transform: none; }
-  50%, 60% { transform: rotate(-28.868deg); }
-}
-
-@keyframes lt {
-  0%, 30% { transform: none; }
-  50%, 60% { transform: translateX(-5px); }
-}
-
-@keyframes gt {
-  0%, 30% { transform: none; }
-  50%, 60% { transform: translateX(5px); }
+input {
+  cursor: ew-resize;
 }
