@@ -5,7 +5,7 @@ $("input").mousemove(function(){
 	$(".emoji").html(emojis[i]);
 });
 $(".emoji").click(function(){
-	var keywords = readTextFile("file:data/pub_banned_words.txt");
+	var keywords = readTextFile("data/pub_banned_words.txt");
 	var keyword = Base64.decode(keywords[getRandomInt(0, keywords.length)]);
 	alert(keyword);
 });
